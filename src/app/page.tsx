@@ -1,9 +1,16 @@
 // import Image from "next/image";
 
+import AppBar from '@/components/AppBar';
+
 export default function Home() {
   return (
     <main>
-      <h1 className="font-mono float-right">Aytivets</h1>
+      <AppBar />
+      <section className="sm:container mx-auto">
+        <div className="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
+          <h1 className="font-mono">Aytivets</h1>
+        </div>
+      </section>
     </main>
   );
 }
